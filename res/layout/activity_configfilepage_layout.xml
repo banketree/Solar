@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/radiogroup_btn" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </TabWidget>
+    </TabHost>
+
+    <com.crystal.solar.view.SegmentedRadioGroup
+        android:id="@+id/radiogroup_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdo_image"
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:minHeight="33dip"
+            android:minWidth="40dip"
+            android:text="@string/page_image"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/radio_colors"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rdo_configurefile"
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:minHeight="33dip"
+            android:minWidth="40dip"
+            android:text="@string/page_configfile"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/radio_colors"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rdo_devicelog"
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:minHeight="33dip"
+            android:minWidth="40dip"
+            android:text="@string/page_devicelog"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/radio_colors"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rdo_configinfo"
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:minHeight="33dip"
+            android:minWidth="40dip"
+            android:text="@string/page_configinfo"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/radio_colors"
+            android:textSize="13sp" />
+    </com.crystal.solar.view.SegmentedRadioGroup>
+
+</RelativeLayout>

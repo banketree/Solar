@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_slate_gray">#2F4F4F</color>
+    <color name="gray_2">#AFAFAF</color>
+    <color name="gray_1">#C0C0C0</color>
+    <color name="black">#a9a9a9</color>
+    <color name="fontRed">#FFFF4141</color>
+    <color name="fontGreen">#FF67EE74</color>
+    <color name="fontBlue">#FF0890FF</color>
+    <color name="fontGray">#FF9A9A9A</color>
+    <color name="fontLBlack">#FF454545</color>
+    <color name="ghostWhite">#FFF8F8FF</color>
+    <color name="fontWhite">#FFFFFFFF</color>
+    <color name="fontBlack">#FF313131</color>
+    <color name="fontYellow">#FFFFB90F</color>
+    <color name="fontLBlue">#FFA4D3EE</color>
+    <color name="tabBottomLineHideViewStubBgColor">#FFFFFFFF</color>
+    <color name="fontTitle">#FF6B9720</color>
+    
+    <color name="white">#ffffffff</color>
+    <color name="unfocused">#cccccccc</color>
+    <color name="pressed">#fff22fff</color>
+    <color name="selected">#fff33fff</color>
+    <color name="focused">#ffff44ff</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="title_bg">#A0C833</color>
+
+</resources>

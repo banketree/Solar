@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Widget.TextView.ListSeparator.White" parent="android:Theme">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:background">@drawable/light_header_dither</item>
+    </style>
+
+    <style name="SubCustomWindowTitleBackground">
+        <item name="android:background">@drawable/page_bg</item>
+    </style>
+
+    <style name="subtitle" parent="android:Theme">
+        <item name="android:windowTitleSize">40dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/SubCustomWindowTitleBackground</item>
+        <item name="android:windowBackground">@android:drawable/screen_background_light</item>
+        <item name="android:colorBackground">@android:color/background_light</item>
+        <!-- <item name="android:colorForeground">@android:color/bright_foreground_dark</item> -->
+        <!-- <item name="android:colorForegroundInverse">@android:color/bright_foreground_light_inverse</item> -->
+
+        <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+        <item name="android:textColorSecondary">@android:color/secondary_text_light</item>
+        <item name="android:textColorTertiary">@android:color/tertiary_text_light</item>
+        <item name="android:textColorPrimaryInverse">@android:color/primary_text_dark</item>
+        <item name="android:textColorSecondaryInverse">@android:color/secondary_text_dark</item>
+        <item name="android:textColorTertiaryInverse">@android:color/tertiary_text_dark</item>
+        
+        <item name="android:textColorPrimaryNoDisable">@android:color/primary_text_light_nodisable</item>
+        <item name="android:textColorSecondaryNoDisable">@android:color/secondary_text_light_nodisable</item>
+        <item name="android:textColorPrimaryInverseNoDisable">@android:color/primary_text_dark_nodisable</item>
+        <item name="android:textColorSecondaryInverseNoDisable">@android:color/secondary_text_dark_nodisable</item>
+        
+        <item name="android:popupWindowStyle">@android:style/Widget.PopupWindow</item>
+   
+
+        <!-- <item name="android:expandableListViewStyle">@android:style/Widget.ExpandableListView.White</item> -->
+        <item name="android:listViewStyle">@android:style/Widget.ListView.White</item>
+        <item name="android:listDivider">@drawable/divider_horizontal_bright</item>
+        <item name="android:listSeparatorTextViewStyle">@style/Widget.TextView.ListSeparator.White</item>
+        <item name="android:progressBarStyle">@android:style/Widget.ProgressBar.Inverse</item>
+        <item name="android:progressBarStyleSmall">@android:style/Widget.ProgressBar.Small.Inverse</item>
+        <item name="android:progressBarStyleLarge">@android:style/Widget.ProgressBar.Large.Inverse</item>
+        <item name="android:progressBarStyleInverse">@android:style/Widget.ProgressBar</item>
+        <item name="android:progressBarStyleSmallInverse">@android:style/Widget.ProgressBar.Small</item>
+        <item name="android:progressBarStyleLargeInverse">@android:style/Widget.ProgressBar.Large</item>
+    </style>
+
+</resources>

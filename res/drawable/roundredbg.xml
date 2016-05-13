@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    >
+ <solid android:color="#ea5413" /> <!-- 没有描边的中间部分 --><!--solid 与  gradient 只能显示在代码最后那个-->
+ <size 
+     android:width="20dip"
+     android:height="20dip"
+     />
+</shape>
+

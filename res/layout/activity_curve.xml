@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_back"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/button_pre" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/date_bg_2x"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/fontBlack" />
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/button_next" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.crystal.solar.view.HorizontalPager
+                android:id="@+id/day_curveViewFlipper"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/radioGroup_date"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dp"
+                android:padding="1dip" >
+            </com.crystal.solar.view.HorizontalPager>
+
+            <TextView
+                android:id="@+id/tv_curve_datepower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontBlack" />
+
+            <com.crystal.solar.view.SegmentedRadioGroup
+                android:id="@+id/radioGroup_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_day"
+                    android:layout_width="75dip"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:minHeight="33dip"
+                    android:minWidth="40dip"
+                    android:text="@string/day"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/radio_colors"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_week"
+                    android:layout_width="75dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:minHeight="33dip"
+                    android:minWidth="40dip"
+                    android:text="@string/week"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/radio_colors"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_month"
+                    android:layout_width="75dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:minHeight="33dip"
+                    android:minWidth="40dip"
+                    android:text="@string/month"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/radio_colors"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_year"
+                    android:layout_width="75dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:minHeight="33dip"
+                    android:minWidth="40dip"
+                    android:text="@string/jidu"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/radio_colors"
+                    android:textSize="13sp" />
+            </com.crystal.solar.view.SegmentedRadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sharebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:src="@drawable/share" />
+
+</LinearLayout>

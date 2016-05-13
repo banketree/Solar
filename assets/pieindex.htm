@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Highcharts Example</title>
+
+<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+<style type="text/css">
+${
+demo
+.css
+}
+</style>
+<script type="text/javascript">
+		function refreshPie(jsonstr)
+		{
+		var  piedata = eval('('+jsonstr+')');
+		  $('#container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,//null,
+            plotShadow: true
+        },
+        title: {
+            text: ''
+        },
+        exporting:{
+                enabled:false
+            },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        colors: ['#086b08', '#f6e132', '#ff0000'],
+        plotOptions: {
+            pie: {
+                size:'50%',
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>:<br>{point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        credits: {
+             text: '',
+             href: ''
+             },
+        series: [{
+            type: 'pie',
+            name: '',
+            data: piedata
+        }]
+    });
+ }
+		
+
+    
+
+		</script>
+</head>
+<body>
+	<script src="js/highcharts.js"></script>
+	<script src="js/modules/exporting.js"></script>
+
+	<div id="container"
+		style="min-width: 330px; height: 400px; max-width: 600px; margin: 0 auto 30px auto"></div>
+
+</body>
+</html>

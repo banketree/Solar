@@ -1,0 +1,115 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+		
+		function refreshStackbar(powerarray,categoryarray,jsonstr)
+		{
+		var  bardata = eval('('+jsonstr+')');
+		var  powervalues = eval('('+powerarray+')');
+		var  xnames = eval('('+categoryarray+')');
+		
+        $('#container').highcharts({
+            chart: {
+            defaultSeriesType: "column",
+            renderTo: "container",
+            zoomType: "x"
+        },
+        title: {
+            text:""
+        },
+        subtitle: {
+            text: ""
+        },
+        xAxis: {
+            categories: xnames
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: ''
+            },
+            labels: {
+                enabled: false
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                },
+            formatter:function(){return powervalues[parseInt(this.x)];}
+                
+           }
+        },
+        legend: {
+            align: 'right',
+            x: 700,
+            verticalAlign: 'top',
+            y: 2,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColorSolid) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            formatter: function() {
+                return '<b>'+ this.x +'</b><br>'+
+                    this.series.name +': '+ this.y +'<br>'+
+                    '总时间: '+ this.point.stackTotal+'h<br>'+
+                    '产能:'+powervalues[parseInt(this.point.x)]
+                    ;
+            }
+        },
+        plotOptions: {
+             bar:{
+                 borderWidth:0
+                },
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                }
+            },
+            series:{
+             dataLabels: {
+                enabled: true, 
+                rotation: -90, 
+                color: '#FFFFFF',
+                 align: 'right',
+                 x:4, 
+                 style: { fontSize: '10px', fontFamily: 'Verdana, sans-serif', textShadow: '0 0 3px black' } 
+                
+                }
+            }
+            
+        },
+        credits: {
+             text: '',
+             href: ''
+             },
+             exporting:{
+                enabled:false
+            },
+        series: bardata
+        });
+    }
+		</script>
+	</head>
+	<body>
+<script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto 30px auto"></div>
+
+	</body>
+</html>

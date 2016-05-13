@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bg" >
+
+        <ImageView
+            android:id="@+id/return_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/qvip_emoji_tab_back_normal" />
+
+        <Button
+            android:id="@+id/Button_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:text="刷新" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:layout_below="@+id/header"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp" >
+
+        <com.crystal.solar.view.SegmentedRadioGroup
+            android:id="@+id/radioGroup_chart_group"
+            android:layout_width="wrap_content"
+            android:layout_height="55dip"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_chart_power"
+                android:layout_width="85dip"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:minHeight="33dip"
+                android:minWidth="40dip"
+                android:text="@string/chart_tab1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/radio_colors"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radio_run_chart"
+                android:layout_width="85dip"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="33dip"
+                android:minWidth="40dip"
+                android:text="@string/chart_tab2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/radio_colors"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radio_h_chart"
+                android:layout_width="85dip"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="33dip"
+                android:minWidth="40dip"
+                android:text="@string/chart_tab3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/radio_colors"
+                android:textSize="13sp" />
+        </com.crystal.solar.view.SegmentedRadioGroup>
+    </LinearLayout>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toplayout" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </TabWidget>
+    </TabHost>
+
+</LinearLayout>

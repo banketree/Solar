@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, OmnikSolarActivity!</string>
+    <string name="app_name">艾科瑞思</string>
+    <string name="login">登陆</string>
+    <string name="register">注册</string>
+    <string name="demo_hint">If you do not have an Omnik portal account, please feel free to use the demo account.</string>
+    <string name="username">用戶名:</string>
+    <string name="password">密码:</string>
+    <string name="username_hint">用戶名</string>
+    <string name="password_hint">密码</string>
+    <string name="email_hint">邮箱</string>
+    <string name="remember">记住</string>
+    <string name="plantlist">设备列表</string>
+    <string name="wifilist">WiFi List</string>
+    <string name="home">Home</string>
+    <string name="curve">Curve</string>
+    <string name="error">Error</string>
+    <string name="map">Map</string>
+    <string name="about">About</string>
+    <string name="name">Name:</string>
+    <string name="today_income">Today\'s Income:</string>
+    <string name="total_income">Total Income:</string>
+    <string name="e_today">E-Today: 0.00kWh</string>
+    <string name="e_total">E-Total: 2197.8kWh</string>
+    <string name="kw">(kW)</string>
+    <string name="power">Device data</string>
+    <string name="detail">Details</string>
+    <string name="saving">Saving</string>
+    <string name="inverters">Inverters</string>
+    <string name="location">Location: </string>
+    <string name="commissioning">Commissioning: </string>
+    <string name="capacity">Capacity: </string>
+    <string name="last_received">Last Received: </string>
+    <string name="saved_trees_today">Today\'s Saved Trees: </string>
+    <string name="saved_trees_total">Total Saved Trees: </string>
+    <string name="reduced_co2_today">Today\'s Reduced CO2: </string>
+    <string name="reduced_co2_total">Total Reduced Trees: </string>
+    <string name="loading">loading...</string>
+    <string name="no_error">No Alarm Information</string>
+    <string name="error_date">Date:</string>
+    <string name="error_state">State:</string>
+    <string name="error_code">Err Code:</string>
+    <string name="error_text">Text:</string>
+    <string name="webpage">www.omnik-solar.com</string>
+    <string name="mail_addr">sales@omnik-solar.com</string>
+    <string name="linkedin">sm-dp@omnik-solar.com</string>
+    <string name="msn">omniksolar@live.com</string>
+    <string name="skype">suzhou.omnik</string>
+    <string name="rate">Rate us</string>
+    <string name="rate_addr">https://play.google.com/store/apps/details?id=com.omnik.omniksolar.android.ui</string>
+
+    <!-- error message -->
+    <string name="err_user_null">user name could not be null.</string>
+    <string name="err_pswd_null">password could not be null.</string>
+    <string name="err_unknown_host">unknown host,please check your Connection</string>
+    <string name="err_malformed_url">malformed URL Exception</string>
+    <string name="err_unknown">unknown error,please try again</string>
+
+    <!-- setting -->
+    <string name="setting">Setting</string>
+    <string name="exchange_unit">Exchange Unit</string>
+    <string name="manual_capacity">Capacity</string>
+    <string name="income">Income</string>
+    <string name="co2">Reduced CO2</string>
+    <string name="tree">Saved Trees</string>
+    <string name="interval">Interval</string>
+
+    <string-array name="exchange_unit_entries">
+        <item>$</item>
+        <item>€</item>
+        <item>¥</item>
+        <item>AU$</item>
+        <item>£</item>
+    </string-array>
+    <string-array name="exchange_unit_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="day">日统计</string>
+    <string name="week">周统计</string>
+    <string name="month">月统计</string>
+    <string name="year">年统计</string>
+    <string name="jidu">季统计</string>
+    <string name="total">Year Total</string>
+    <string name="page_tongjitu">统计图</string>
+    <string name="page_data">数据表</string>
+    <string name="page_map">地图位置</string>
+    <string name="page_image">图片文件</string>
+    <string name="page_configfile">配置文件</string>
+    <string name="page_devicelog">设备日志</string>
+    <string name="page_devicefiles">设备信息</string>
+    <string name="page_configinfo">配置信息</string>
+    <string name="page_otherinfo">其它信息</string>
+    <string name="page_orderinfo">订单信息</string>
+    <string name="page_reqinfo">維修申请</string>
+    <string name="chart_tab1">产能统计</string>
+    <string name="chart_tab2">工况统计</string>
+    <string name="chart_tab3">日夜班统计</string>
+    <string name="tip_pls_input_com">请填写完整信息</string>
+    <string name="tip_pls_net_error">网络错误</string>
+    <string name="tip_pls_server_error">服务器错误</string>
+    <string name="not_network">>网络错误</string>
+    <string name="operation_error">获取数据失败</string>
+    <string name="not_null">用戶明或密码错误!</string>
+    <string name="str_device_baoyang_title">设备保养</string>
+    <string name="str_device_jindu_title">固晶精度</string>
+    <string name="str_device_suojibiao_title">锁机表</string>
+    <string name="str_device_baoyang_dingzheng">顶点使用次数</string>
+    <string name="str_device_baoyang_xizui">吸嘴使用次数</string>
+    <string name="str_device_baoyang_dianjiaotou">点胶头使用次数</string>
+    <string name="str_device_jindu_x">在线固晶精度-x</string>
+    <string name="str_device_jindu_y">在线固晶精度-y</string>
+    <string name="str_device_jindu_z">在线固晶精度-z</string>
+    <string name="str_device_suojibiao_suoji">锁机</string>
+    <string name="str_device_suojibiao_time">锁机时间</string>
+    <string name="str_device_suojibiao_yonghuhao">锁机用戶号</string>
+    <string name="device_runtime">运行时间</string>
+    <string name="device_waittime">等待时间</string>
+    <string name="device_stoptime">停止时间</string>
+    <string name="bug_apply_type">申请类型:</string>
+    <string name="bug_apply_content">申请内容:</string>
+    <string name="submit_btn">提 交</string>
+    <string name="submit_success">提交成功</string>
+    <string name="bug_apply_typeremote">远程诊断</string>
+    <string name="bug_apply_typetel">电话</string>
+    <string name="bug_apply_typeemail">邮件</string>
+    <string name="loadmoredata">数据加载中...</string>
+    <string name="pull_to_refresh_tap_label">点击刷新数据...</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="str_shouhou_title">售后列表</string>
+    <string name="io_singnal">IO信号</string>
+    <string name="io_singnal_inputtitle">通用输入信号电平</string>
+    <string name="main_tab1">现场管理</string>
+    <string name="main_tab2">行业资讯</string>
+    <string name="main_tab3">企业互助</string>
+    <string name="main_tab4">订单查询</string>
+    <string name="compay_intro">公司简介</string>
+    <string name="map_locate">地理位置</string>
+    <string name="new_pro_gongyi">最新生产工艺</string>
+    <string name="new_shixun">最新行业时讯</string>
+    <string name="new_device_tuiguang">最新设备推广</string>
+    <string name="find_daigong">寻找代工</string>
+    <string name="find_dingdan">寻找订单</string>
+    <string name="help_huzhu">申请互助</string>
+    <string name="help_huzhu_list">互助列表</string>
+    <string name="devicelist">设备列表</string>
+    <string name="track_str">订单跟踪</string>
+    <string name="testdata">快件已经扫描完成!</string>
+    <string name="loading_submit">正在提交数据...</string>
+    <string name="loading_load">正在登录...</string>
+    <string name="nodatatips">没有获取到有效数据!!!</string>
+    <string name="syncpower">平台富余产能</string>
+    <string name="huzhu_xilie">系列</string>
+    <string name="huzhu_leixing">支架类型</string>
+    <string name="huzhe_xiangmu">项目</string>
+    <string name="powers_str">产能</string>
+    <string name="beizhu">备注</string>
+    <string name="xilie_teipian">贴片二极管</string>
+    <string name="xilie_zhijia">整流桥二级管</string>
+    <string name="xilie_other">其他</string>
+    <string name="tiepian_sma">SMA</string>
+    <string name="tiepian_smb">SMB</string>
+    <string name="tiepian_smc">SMC</string>
+    <string name="tiepian_sod">SOD</string>
+    <string name="zhijia_mbs">MBS</string>
+    <string name="zhijia_tbs">TBS</string>
+    <string name="zhijia_mbf">MBF</string>
+    <string name="zhijia_lbs">LBS</string>
+    <string name="zhijia_abs">ABS</string>
+
+</resources>

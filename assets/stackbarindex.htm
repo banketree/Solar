@@ -1,0 +1,125 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+		
+		function refreshStackbar(jsonstr,jsonstr2,dates1,dates2)
+		{
+		var  bardata = eval('('+jsonstr+')');
+		var  bardata2 = eval('('+jsonstr2+')');
+		var  datestr1 = eval('('+dates1+')');
+		var  datestr2 = eval('('+dates2+')');
+		
+        $('#container').highcharts({
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: ''
+            },
+            exporting:{
+                enabled:false
+            },
+            xAxis: {
+                categories: [' ']
+            },
+            yAxis: {
+                min: 0,
+                max:12,
+                tickInterval:1,
+                lineColor: '#000', 
+                lineWidth: 1, 
+                tickWidth: 1, 
+                tickColor: '#000', 
+                title: {
+                    text: '8-20(早班时间)'
+                },
+                labels:{
+                 formatter:function(){return datestr1[this.value];}
+                }
+            },
+            legend: {
+                reversed: true,
+                 enabled:false
+            },
+             credits: {
+             text: '',
+             href: ''
+             },
+            plotOptions: {
+                series: {
+                    stacking: 'normal'
+                },
+                bar:{
+                 borderWidth:0
+                }
+            },
+                series: bardata
+        });
+        
+        $('#container1').highcharts({
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: ''
+            },
+            exporting:{
+                enabled:false
+            },
+            xAxis: {
+                categories: ['']
+            },
+            yAxis: {
+                min: 0,
+                lineColor: '#000', 
+                lineWidth: 1, 
+                tickWidth: 1, 
+                tickColor: '#000', 
+                max:12,
+                tickInterval:1,
+                title: {
+                   text: '20-8(晚班时间)'
+                },
+                 labels:{
+                 formatter:function(){return datestr2[this.value];}
+                }
+            },
+            legend: {
+                reversed: true,
+                 enabled:false
+            },
+             credits: {
+             text: '',
+             href: ''
+             },
+            plotOptions: {
+                series: {
+                    stacking: 'normal'
+                },
+                bar:{
+                 borderWidth:0
+                }
+            },
+                series: bardata2
+        });
+    }
+    
+
+		</script>
+	</head>
+	<body>
+<script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; max-width: 200px; height: 130px; margin: 0 auto"></div>
+<div id="container1" style="min-width: 310px; max-width: 200px; height: 130px; margin: 0 auto"></div>
+	</body>
+</html>

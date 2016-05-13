@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bg" >
+
+        <ImageView
+            android:id="@+id/return_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qvip_emoji_tab_back_normal" />
+    </RelativeLayout>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radiogroup_btn"
+        android:layout_below="@+id/header" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </TabWidget>
+    </TabHost>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdo_daigong"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/segment_radio_middle"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/help_huzhu"
+            android:textColor="@color/radio_colors"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rdo_dingdan"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/segment_radio_middle"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/help_huzhu_list"
+            android:textColor="@color/radio_colors"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+</RelativeLayout>

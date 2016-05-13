@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radiogroup_btn" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </TabWidget>
+    </TabHost>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdo_tongjitu"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bottom_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/page_tongjitu"
+            android:textColor="#766f6f"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rdo_data"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bottom_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/page_data"
+            android:textColor="#766f6f"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rdo_map"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bottom_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/page_map"
+            android:textColor="#766f6f"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rdo_image"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/main_bottom_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/page_image"
+            android:textColor="#766f6f"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/rdo_configurefile"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bottom_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/page_devicefiles"
+            android:textColor="#766f6f"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rdo_devicelog"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/main_bottom_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/page_devicelog"
+            android:textColor="#766f6f"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/rdo_ioinfo"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bottom_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/io_singnal"
+            android:textColor="#766f6f"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rdo_otherinfo"
+            android:layout_width="65dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_bottom_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/page_otherinfo"
+            android:textColor="#766f6f"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+</RelativeLayout>

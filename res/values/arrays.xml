@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+	<string-array name="xilie_array">
+		<item>@string/xilie_teipian</item>
+		<item>@string/xilie_zhijia</item>
+		<item>@string/xilie_other</item>
+	</string-array>
+	
+	<string-array name="leibie_array">
+        <item>@string/tiepian_sma</item>
+        <item>@string/tiepian_smb</item>
+        <item>@string/tiepian_smc</item>
+        <item>@string/tiepian_sod</item>
+        <item>@string/xilie_other</item>
+    </string-array>
+    
+	<string-array name="xiangmu_array">
+        <item>@string/zhijia_mbs</item>
+        <item>@string/zhijia_tbs</item>
+        <item>@string/zhijia_mbf</item>
+        <item>@string/zhijia_lbs</item>
+        <item>@string/zhijia_abs</item>
+        <item>@string/xilie_other</item>
+    </string-array>
+
+</resources>
